@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Resets */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Proper Light/Dark mode handling */
+  color-scheme: light dark;
+  color: #1f2937; /* Gray-800 */
+  background-color: #f3f4f6; /* Gray-100 */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #111827; /* Gray-900 */
+  }
+}
+
+/* Reset Body to allow full-page layouts */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Removed 'display: flex' and 'place-items: center' so your Navbar works */
+}
+
+/* Optional: Make links standard blue */
+a {
+  font-weight: 500;
+  color: #2563eb; /* Tailwind blue-600 */
+  text-decoration: inherit;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1d4ed8; /* Tailwind blue-700 */
+}
+
+/* Optional: Basic button reset (You should mostly use Tailwind classes in JSX instead) */
+button {
+  cursor: pointer;
+}
