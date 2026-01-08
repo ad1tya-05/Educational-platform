@@ -4,7 +4,7 @@ A MERN stack web application built to help educational institutions manage and d
 
  Live Demo
 
-- **Frontend: https://educational-platform-cyan.vercel.app/login
+- **Frontend: educational-platform-cyan.vercel.app
 - **Backend: https://my-educational-platform.onrender.com
 
  Key Features
